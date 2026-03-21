@@ -17,7 +17,7 @@ int main()
     printf("Please Insert your card\n\n");
     scanf("%c", &card);
 
-    if(card == "k")
+    if(card == 'k')
     {
         printf("Hello Ken Keneki\n\n");
 
@@ -65,7 +65,7 @@ int main()
                     else
                     {
                         printf("collect the money\n\n");
-                        diff = b - a;
+                        diff = a - b;
                         printf("now, your bank balance is %d", diff);
                     }
                 }
@@ -121,7 +121,7 @@ int main()
             else
             {
                 printf("collect the money\n\n");
-                diff = b - a;
+                diff = a - b;
                 printf("now, your bank balance is %d", diff);
             }
         }
@@ -138,7 +138,7 @@ int main()
             else
             {
                 printf("collect the money\n\n");
-                diff = b - a;
+                diff = a - b;
                 printf("now, your bank balance is %d", diff);
             }
         }
