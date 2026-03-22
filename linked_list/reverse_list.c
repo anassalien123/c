@@ -47,13 +47,32 @@ void reverse_list(t_node **head)
     {
         next = current->next;
         current->next = prev;
-        prev = next;
+        prev = current;
         current = next;
     }
     *head = prev;
 }
 
+void print_list(t_node *head)
+{
+    while (head)
+    {
+        printf("%d -> ", head->data);
+        head = head->next;
+    }
+    printf("NULL\n");
+}
+
 int main()
 {
-    
+    t_node *head = NULL;
+
+    add_back(&head, 1);
+    add_back(&head, 2);
+    add_back(&head, 3);
+    add_back(&head, 4);
+
+    print_list(head);
+    reverse_list(&head);
+    print_list(head);
 }
