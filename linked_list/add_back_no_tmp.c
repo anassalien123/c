@@ -12,8 +12,15 @@
 
 #include "header.h"
 #include <stdio.h>
+#include <stdlib.h>
 
 void add_back(t_node **head, int value)
 {
+    t_node *new_node;
+
+    new_node = malloc(sizeof(t_node));
+    if(!new_node)
+        return ;
+    
     
 }
